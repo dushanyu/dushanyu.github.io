@@ -16,29 +16,23 @@
   <meta name="author" content="YuBai">
   <meta name="keywords" content="">
   
-    <meta name="description" content="注册美区 Apple ID 步骤： 打开注册页面：https:&#x2F;&#x2F;appleid.apple.com&#x2F;account  填写信息，国家选美国（United States）:    在个人信息（Personal Information）这选择国家或地区（Country &#x2F; Region）    点Change country or region，会弹出新窗口    付款方式选择无（None">
+    <meta name="description" content="openssl 生成 csr, key, 以及生成自签发证书:生成 csr - rsa 加密算法:1openssl req -new -newkey rsa:2048 -sha256 -nodes -keyout yourdomain.key -out yourdomain.csr  生成 csr - ecc 加密算法:12openssl ecparam -out yourdomain.key -">
 <meta property="og:type" content="article">
-<meta property="og:title" content="注册美区 Apple ID 步骤">
-<meta property="og:url" content="https://www.xidaye.com/2024/01/18/RegisterUSAppleID/index.html">
+<meta property="og:title" content="ssl 证书常用的 openssl 命令">
+<meta property="og:url" content="https://www.xidaye.com/2024/01/26/OpensslCommands/index.html">
 <meta property="og:site_name" content="羽白博客 | YB Blog">
-<meta property="og:description" content="注册美区 Apple ID 步骤： 打开注册页面：https:&#x2F;&#x2F;appleid.apple.com&#x2F;account  填写信息，国家选美国（United States）:    在个人信息（Personal Information）这选择国家或地区（Country &#x2F; Region）    点Change country or region，会弹出新窗口    付款方式选择无（None">
+<meta property="og:description" content="openssl 生成 csr, key, 以及生成自签发证书:生成 csr - rsa 加密算法:1openssl req -new -newkey rsa:2048 -sha256 -nodes -keyout yourdomain.key -out yourdomain.csr  生成 csr - ecc 加密算法:12openssl ecparam -out yourdomain.key -">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.xidaye.com/img/apple-account.png">
-<meta property="og:image" content="https://www.xidaye.com/img/apple-info.png">
-<meta property="og:image" content="https://www.xidaye.com/img/apple-change-country.png">
-<meta property="og:image" content="https://www.xidaye.com/img/apple-pay.png">
-<meta property="og:image" content="https://www.xidaye.com/img/apple-address.png">
-<meta property="article:published_time" content="2024-01-18T01:13:13.000Z">
-<meta property="article:modified_time" content="2024-01-19T12:14:47.367Z">
+<meta property="article:published_time" content="2024-01-26T11:49:19.000Z">
+<meta property="article:modified_time" content="2024-01-29T09:15:44.874Z">
 <meta property="article:author" content="YuBai">
-<meta property="article:tag" content="Apple">
-<meta property="article:tag" content="AppleID">
+<meta property="article:tag" content="openssl">
+<meta property="article:tag" content="证书">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.xidaye.com/img/apple-account.png">
   
   
   
-  <title>注册美区 Apple ID 步骤 - 羽白博客 | YB Blog</title>
+  <title>ssl 证书常用的 openssl 命令 - 羽白博客 | YB Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -216,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="注册美区 Apple ID 步骤"></span>
+            <span id="subtitle" data-typed-text="ssl 证书常用的 openssl 命令"></span>
           
         </div>
 
@@ -227,8 +221,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-18 09:13" pubdate>
-          2024年1月18日 上午
+        <time datetime="2024-01-26 19:49" pubdate>
+          2024年1月26日 晚上
         </time>
       </span>
     
@@ -239,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          223 字
+          304 字
         
       </span>
     
@@ -250,7 +244,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -287,40 +281,48 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">注册美区 Apple ID 步骤</h1>
+            <h1 id="seo-header">ssl 证书常用的 openssl 命令</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="注册美区-Apple-ID-步骤："><a href="#注册美区-Apple-ID-步骤：" class="headerlink" title="注册美区 Apple ID 步骤："></a>注册美区 Apple ID 步骤：</h1><ol>
-<li><p>打开注册页面：<a target="_blank" rel="noopener" href="https://appleid.apple.com/account">https://appleid.apple.com/account</a></p>
-</li>
-<li><p>填写信息，国家选美国（United States）:<br>  <img src="/img/apple-account.png" srcset="/img/loading.gif" lazyload alt="404"></p>
-</li>
-<li><p>在个人信息（Personal Information）这选择国家或地区（Country &#x2F; Region）<br>  <img src="/img/apple-info.png" srcset="/img/loading.gif" lazyload alt="404"></p>
-</li>
-<li><p>点Change country or region，会弹出新窗口<br>  <img src="/img/apple-change-country.png" srcset="/img/loading.gif" lazyload alt="404"></p>
-</li>
-<li><p>付款方式选择无（None），其他正常填写即可<br>  <img src="/img/apple-pay.png" srcset="/img/loading.gif" lazyload alt="404"></p>
-</li>
-<li><p>多说以下地址吧</p>
-<ol>
-<li>请选择五大免税州：阿拉斯加（Alaska），特拉华（Delaware），蒙大拿（Montana），新罕布什尔（New Hampshire），俄勒冈（Oregon）</li>
-<li><a target="_blank" rel="noopener" href="https://www.google.com/maps">https://www.google.com/maps</a>上选个任意免税州的点，复制其地址信息<br> <img src="/img/apple-address.png" srcset="/img/loading.gif" lazyload alt="404"></li>
-</ol>
-</li>
-<li><p>手机号随便写个美国的就行，10位数例如： 9074-5246-00</p>
-</li>
-<li><p>至此已经完成，在 ios 设备上用此号登录 Appstore 即可，验证是否成功：能顺利下载完成一个免费 app</p>
-</li>
-<li><p>使用付费 app 而不添加付款方式的三种方式：</p>
-<ol>
-<li>购买兑换码</li>
-<li>礼品卡充值</li>
-<li>加入其他人的美区家庭组</li>
-</ol>
-</li>
-</ol>
+                <h1 id="openssl-生成-csr-key-以及生成自签发证书"><a href="#openssl-生成-csr-key-以及生成自签发证书" class="headerlink" title="openssl 生成 csr, key, 以及生成自签发证书:"></a>openssl 生成 csr, key, 以及生成自签发证书:</h1><h2 id="生成-csr-rsa-加密算法"><a href="#生成-csr-rsa-加密算法" class="headerlink" title="生成 csr - rsa 加密算法:"></a>生成 csr - rsa 加密算法:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl req -new -newkey rsa:2048 -sha256 -nodes -keyout yourdomain.key -out yourdomain.csr<br></code></pre></td></tr></table></figure>
+
+<h2 id="生成-csr-ecc-加密算法"><a href="#生成-csr-ecc-加密算法" class="headerlink" title="生成 csr - ecc 加密算法:"></a>生成 csr - ecc 加密算法:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl ecparam -out yourdomain.key -name prime256v1 -genkey<br>openssl req -new -key yourdomain.key -out yourdomain.csr<br></code></pre></td></tr></table></figure>
+
+<h2 id="生成自签发证书"><a href="#生成自签发证书" class="headerlink" title="生成自签发证书:"></a>生成自签发证书:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt<br></code></pre></td></tr></table></figure>
+
+<h2 id="从密钥生成-csr"><a href="#从密钥生成-csr" class="headerlink" title="从密钥生成 csr:"></a>从密钥生成 csr:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl req -out CSR.csr -key privateKey.key -new<br></code></pre></td></tr></table></figure>
+
+<h2 id="从证书文件生成-csr"><a href="#从证书文件生成-csr" class="headerlink" title="从证书文件生成 csr:"></a>从证书文件生成 csr:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl x509 -x509toreq -<span class="hljs-keyword">in</span> certificate.crt -out CSR.csr -signkey privateKey.key<br></code></pre></td></tr></table></figure>
+
+<h2 id="去除-key-密码"><a href="#去除-key-密码" class="headerlink" title="去除 key 密码:"></a>去除 key 密码:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl rsa -<span class="hljs-keyword">in</span> privateKey.pem -out newPrivateKey.pem<br></code></pre></td></tr></table></figure>
+
+<h1 id="openssl-检查、校验-key-csr-以及证书"><a href="#openssl-检查、校验-key-csr-以及证书" class="headerlink" title="openssl 检查、校验 key, csr 以及证书"></a>openssl 检查、校验 key, csr 以及证书</h1><h2 id="检查校验-csr-包含信息命令"><a href="#检查校验-csr-包含信息命令" class="headerlink" title="检查校验 csr 包含信息命令"></a>检查校验 csr 包含信息命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl req -text -noout -verify -<span class="hljs-keyword">in</span> CSR.csr<br></code></pre></td></tr></table></figure>
+
+<h2 id="检查校验-key-包含信息命令"><a href="#检查校验-key-包含信息命令" class="headerlink" title="检查校验 key 包含信息命令"></a>检查校验 key 包含信息命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl rsa -<span class="hljs-keyword">in</span> privateKey.key -check<br></code></pre></td></tr></table></figure>
+
+<h2 id="检查校验-ssl-证书命令"><a href="#检查校验-ssl-证书命令" class="headerlink" title="检查校验 ssl 证书命令"></a>检查校验 ssl 证书命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl x509 -<span class="hljs-keyword">in</span> certificate.crt -text -noout<br></code></pre></td></tr></table></figure>
+
+<h2 id="检查校验-pkcs-12-后缀为-pfx-或-p12-格式证书命令"><a href="#检查校验-pkcs-12-后缀为-pfx-或-p12-格式证书命令" class="headerlink" title="检查校验 pkcs#12(后缀为.pfx 或 .p12)格式证书命令"></a>检查校验 pkcs#12(后缀为.pfx 或 .p12)格式证书命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl pkcs12 -info -<span class="hljs-keyword">in</span> keyStore.p12<br></code></pre></td></tr></table></figure>
+
+<h1 id="openssl-排查、验证-key-csr-以及证书"><a href="#openssl-排查、验证-key-csr-以及证书" class="headerlink" title="openssl 排查、验证 key, csr 以及证书"></a>openssl 排查、验证 key, csr 以及证书</h1><h2 id="检查证书、csr-key-是否匹配命令"><a href="#检查证书、csr-key-是否匹配命令" class="headerlink" title="检查证书、csr, key 是否匹配命令"></a>检查证书、csr, key 是否匹配命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl x509 -noout -modulus -<span class="hljs-keyword">in</span> certificate.crt | openssl md5<br>openssl rsa -noout -modulus -<span class="hljs-keyword">in</span> privateKey.key | openssl md5<br>openssl req -noout -modulus -<span class="hljs-keyword">in</span> CSR.csr | openssl md5<br></code></pre></td></tr></table></figure>
+
+<h2 id="检查已安装-ssl-证书网站的证书信息命令"><a href="#检查已安装-ssl-证书网站的证书信息命令" class="headerlink" title="检查已安装 ssl 证书网站的证书信息命令"></a>检查已安装 ssl 证书网站的证书信息命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl s_client -connect www.xidaye.com:443<br></code></pre></td></tr></table></figure>
+
+<h1 id="openssl-转换证书"><a href="#openssl-转换证书" class="headerlink" title="openssl 转换证书"></a>openssl 转换证书</h1><h2 id="转换-pem-到-der"><a href="#转换-pem-到-der" class="headerlink" title="转换 pem 到 der"></a>转换 pem 到 der</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl x509 -outform der -<span class="hljs-keyword">in</span> certificate.pem -out certificate.der<br></code></pre></td></tr></table></figure>
+
+<h2 id="转换-pem-到-p7b"><a href="#转换-pem-到-p7b" class="headerlink" title="转换 pem 到 p7b"></a>转换 pem 到 p7b</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl crl2pkcs7 -nocrl -certfile certificate.cer -out certificate.p7b -certfile CACert.cer<br></code></pre></td></tr></table></figure>
+
+<h2 id="转换-pem-到-pfx"><a href="#转换-pem-到-pfx" class="headerlink" title="转换 pem 到 pfx"></a>转换 pem 到 pfx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl pkcs12 -<span class="hljs-built_in">export</span> -out certificate.pfx -inkey privateKey.key -<span class="hljs-keyword">in</span> certificate.crt -certfile CACert.crt<br></code></pre></td></tr></table></figure>
+
+<h2 id="转换-der-到-pem"><a href="#转换-der-到-pem" class="headerlink" title="转换 der 到 pem"></a>转换 der 到 pem</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl x509 -inform der -<span class="hljs-keyword">in</span> certificate.cer -out certificate.pem<br></code></pre></td></tr></table></figure>
+
+<h2 id="转换-p7b-到-pem"><a href="#转换-p7b-到-pem" class="headerlink" title="转换 p7b 到 pem"></a>转换 p7b 到 pem</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl pkcs7 -print_certs -<span class="hljs-keyword">in</span> certificate.p7b -out certificate.cer<br></code></pre></td></tr></table></figure>
+
+<h2 id="转换-p7b-到-pfx"><a href="#转换-p7b-到-pfx" class="headerlink" title="转换 p7b 到 pfx"></a>转换 p7b 到 pfx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl pkcs7 -print_certs -<span class="hljs-keyword">in</span> certificate.p7b -out certificate.cer<br>openssl pkcs12 -<span class="hljs-built_in">export</span> -<span class="hljs-keyword">in</span> certificate.cer -inkey privateKey.key -out certificate.pfx -certfile CACert.cer<br></code></pre></td></tr></table></figure>
+
+<h2 id="转换-pfx-到-pem"><a href="#转换-pfx-到-pem" class="headerlink" title="转换 pfx 到 pem"></a>转换 pfx 到 pem</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">openssl pkcs12 -<span class="hljs-keyword">in</span> certificate.pfx -out certificate.cer -nodes<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -339,7 +341,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Apple/" class="category-chain-item">Apple</a>
+  <a href="/categories/tools/" class="category-chain-item">tools</a>
   
   
 
@@ -354,9 +356,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Apple/" class="print-no-link">#Apple</a>
+        <a href="/tags/openssl/" class="print-no-link">#openssl</a>
       
-        <a href="/tags/AppleID/" class="print-no-link">#AppleID</a>
+        <a href="/tags/%E8%AF%81%E4%B9%A6/" class="print-no-link">#证书</a>
       
     </div>
   
@@ -368,8 +370,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>注册美区 Apple ID 步骤</div>
-      <div>https://www.xidaye.com/2024/01/18/RegisterUSAppleID/</div>
+      <div>ssl 证书常用的 openssl 命令</div>
+      <div>https://www.xidaye.com/2024/01/26/OpensslCommands/</div>
     </div>
     <div class="license-meta">
       
@@ -381,7 +383,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月18日</div>
+          <div>2024年1月26日</div>
         </div>
       
       
@@ -413,18 +415,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/26/OpensslCommands/" title="ssl 证书常用的 openssl 命令">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ssl 证书常用的 openssl 命令</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/14/bandwagon/" title="搬瓦工优惠码分享（每日更新）">
-                        <span class="hidden-mobile">搬瓦工优惠码分享（每日更新）</span>
+                      <a href="/2024/01/18/RegisterUSAppleID/" title="注册美区 Apple ID 步骤">
+                        <span class="hidden-mobile">注册美区 Apple ID 步骤</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
